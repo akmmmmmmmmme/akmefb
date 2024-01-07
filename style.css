@@ -2,8 +2,9 @@ body{
     background-repeat: repeat;
     background-image: url(res/bg.png);
     background-attachment: fixed;
-    padding: 250px;
-    padding-top: 50px;
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
 
 }
 
@@ -15,12 +16,10 @@ div{
 
 a:hover{
     color: white;
-
 }
 
 a{
     width: fit-content;
-
 }
 
 .purple{
@@ -33,27 +32,24 @@ a{
     color: black;
     text-decoration-line: none; 
     font-weight: bold;
-  
-
 }
 
 .black2{
     color: black;
     text-decoration-line: none; 
-
 }
 
 .product{
-    width: 100%;
+    width: auto;
     height: 90%;
     border-radius: 15px;
 }
 
 
 #banner{
-    width: auto;
-    height: 100px;
-    margin-bottom: 180px;
+    height: fit-content;
+    margin: 100px;
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,44 +68,30 @@ a{
     justify-content: space-between;
     padding-left: 100px;
     padding-right: 100px;
-
-        
 }
 
 #content{
     display: flex;
-    padding: auto;
+    justify-content: center;
     
 }
 
 #left{
-    width: 20%;
+    width: auto;
     background-color: rgb(234, 48, 255);
-    margin: 10px;
-    margin-left: 0px;
+    margin: 50px;
     display: flex;
     flex-direction: column;
     padding: 30px;
+    padding-right: 60px;
     row-gap: 60px;
-    
-
-}
-
-#center{
-    width: 100%;
-    margin: 10px;
-
 }
 
 #items{
     display: grid;
     grid-template-columns: auto auto auto;
-    gap: 100px;
+    gap: 70px;
     padding: 50px;
-    justify-content: center;
-    align-items: center;
-
-    
 }
 
 .item{
@@ -118,5 +100,4 @@ a{
     display: flex;
     flex-direction: column;
     padding: 10px;
-    
 }
